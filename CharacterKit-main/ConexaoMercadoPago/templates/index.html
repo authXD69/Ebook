@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook De Desenho</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+         <h1 id="bodyh1">CharacterKit</h1>
+         <h2>Faça seus desenhos ganharem vida!</h2>
+    </header>
+    <div  id="image">
+        <img src="{{ url_for('static', filename='images/image1.jpeg') }}" alt="Ebook de Desenho">
+    </div>
+    <div class="main" id="main">
+        <h1>Garanta Agora o PDF</h1>
+        <p>Baixe agora o E-book e comece sua jornada artística.</p>
+        <ul id="main ul">
+            <li>Pagamento Seguro via MercadoPago</li>
+            <li>Entrega Imediata após a confirmação do pagamento</li>
+            <li>Acesso Vitalício ao Conteúdo</li>
+        </ul>
+        <h1>Preço: R$2,99</h1>
+       <button id="final-btn1" type="button" class="comprar" onclick="scrollToSection()">Ir para parte de pagamento</button>
+    </div>
+    <div class="text1">
+        <h2>Aprenda a fazer Desenhos como esses</h2>
+    </div>
+    <div class="carousel-container" id="carousel1">
+    <div class="carousel">
+        <div class="group">
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex1.png') }}" alt="1"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex2.png') }}" alt="2"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex3.png') }}" alt="3"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex4.png') }}" alt="4"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex5.png') }}" alt="5"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex6.png') }}" alt="6"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex7.png') }}" alt="7"></div>
+        </div>
+        <div aria-hidden class="group">
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex1.png') }}" alt="1"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex2.png') }}" alt="2"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex3.png') }}" alt="3"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex4.png') }}" alt="4"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex5.png') }}" alt="5"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex6.png') }}" alt="6"></div>
+            <div class="cardo"><img src="{{ url_for('static', filename='images/website/ex7.png') }}" alt="7"></div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="info" id="benefits">
+        <div class="info-content">
+            <h2>Em um único ebook você aprendera:</h2>
+            <ul>
+                <li>Fundamentos de tridimensionalidade</li>
+                <li>Fundamentos de Anatomia</li>
+                <li>Estilização de Traço</li>
+                <li>A Fazer Incriveis Designs de Personagens</li>
+            </ul>
+        </div>
+        <div class="info-media">
+            <img src="{{ url_for('static', filename='images/benefits.png') }}" alt="benefits" class="side-image">
+        </div>
+    </div>
+        <div class="info" id="benefits">
+        <div class="info-content">
+            <h2>Em um único ebook você aprendera:</h2>
+            <ul>
+                <li>Fundamentos de tridimensionalidade</li>
+                <li>Fundamentos de Anatomia</li>
+                <li>Estilização de Traço</li>
+                <li>A Fazer Incriveis Designs de Personagens</li>
+            </ul>
+        </div>
+        <div class="info-media" id="benefits img">
+            <img src="{{ url_for('static', filename='images/info.png') }}" alt="benefits" class="side-image">
+        </div>
+    </div>
+    <div class="banner">
+        <h2>Informações sobre o E-book</h2>
+        <p>Lembrar que o E-book será enviado por E-mail com acesso permanente para o usuario
+         (mas se o e-mail enviado for apagado, o acesso se perderá)
+        </p>
+      </div>
+    
+      <div class="cards">
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/cards/ex1.png') }}" alt="Playground Mental">
+          <div class="card-content">
+            <h3>Fundamentos Base</h3>
+            <p>Aprenda como usar Formas (cubos, esferas, cilindros, pirâmides tridimensionalidade), formas na prática e sobre anatomia básica</p>
+          </div>
+          <div class="card-date">Capitulo-1</div>
+        </div>
+    
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/cards/ex2.png') }}" alt="design">
+          <div class="card-content">
+            <h3>Design</h3>
+            <p>Aprenda a como criar design de personagens, a linguagem das formas e sobre como usar referências no seu desenho</p>
+          </div>
+          <div class="card-date">Capitulo-2</div>
+        </div>
+    
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/cards/ex3.png') }}" alt="Teoria das Cores">
+          <div class="card-content">
+            <h3>Teoria das Cores</h3>
+            <p>Aqui você verá como funciona o circulo cromático, harmonia de cores, também como utiliza-lá nos seus personagens</p>
+          </div>
+          <div class="card-date">Capitulo-3</div>
+    </div>
+    
+        <div class="card">
+          <img src="{{ url_for('static', filename='images/cards/ex4.png') }}" alt="Aplicações e imagens de exemplos">
+          <div class="card-content">
+            <h3>Aplicações e imagens como base</h3>
+            <p>Entenda a como aplicar seus desenhos no mundo da arte usando exemplos de personagens da cultura popular.</p>
+          </div>
+          <div class="card-date">Capitulo-4</div>
+        </div>
+      </div>
+    <div class="text1">
+        <h2>Conheça mais sobre os autores do E-Book</h2>
+    </div>
+    </div>
+       <div class="cards1">
+        <div class="card1">
+          <img src="{{ url_for('static', filename='images/website/file1.png') }}" alt="Playground Mental">
+          <div class="card-content1">
+            <h3>Heitor Augusto Rezende</h3>
+            <p>Clique no texto abaixo para entrar na pagina do Intagram</p>
+            <div class="card-date1"><a href="https://www.instagram.com/auth_xd/" target="_blank" rel="noopener noreferrer" role="button">Clique aqui</a></div>
+          </div>
+          
+        </div>
+    
+        <div class="card1">
+          <img src="{{ url_for('static', filename='images/website/file2.jpeg') }}" alt="design">
+          <div class="card-content1">
+            <h3>João Pedro Oliveira</h3>
+            <p>Clique no botão abaixo para entrar na pagina do Intagram</p>
+           <div class="card-date1"><a href="https://www.instagram.com/oliveiraaguiarp/" target="_blank" rel="noopener noreferrer" role="button">Clique aqui</a></div>
+        </div>
+    </div>
+    </div>
+    <br id="scrolling"><br><br><br><br><br>
+    <div class="info" id="meet">
+        <h2>Atenção aos detalhes abaixo</h2>
+                <p>O ebook é fornecido em formato PDF, compatível com diversos dispositivos.</p>
+                <p>Ele será disponivel para baixar apenas UMA VEZ após a confirmação do pagamento, então tome cuidado para não perder o livro.</p>
+                <p>Nós oferecemos suporte por e-mail para esclarecer quaisquer dúvidas que você possa ter ou para receber um feedback sobre ele (contatos no rodapé).</p>
+                <p>Dito isso, aproveite o livro ao máximo e Boa sorte na sua jornada artística!</p>
+    </div> 
+    
+<div id="minhaSecao">
+     <div id="main">
+        <h1>Garanta Agora o PDF</h1>
+        <p>Baixe agora o ebook e comece sua jornada artística.</p>
+        <ul id="main ul">
+            <li>Pagamento Seguro via MercadoPago</li>
+            <li>Entrega Imediata após a confirmação do pagamento</li>
+            <li>Acesso Vitalício ao Conteúdo</li>
+        </ul>
+        <h1>Preço: R$2,99</h1>
+        <form method="get">
+            <a href="{{ link_pagamento }}" class="btn" id="final-btn1">Pagar agora</a>
+
+        </form>
+    </div>
+</div>
+</body>
+<footer>
+<p>Todos os direitos reservados</p>
+<p>Desenvolvido por João Pedro Oliveira Aguiar e Heitor Augusto Andrade de Rezende Silva</p>
+<p>E-mail para contato: auth690@gmail.com</p>
+<p>E-mail para contato: auth690@gmail.com</p>
+
+</footer>
+
+</html>
+    <script>
+        function scrollToSection() {
+          document.getElementById("scrolling").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
